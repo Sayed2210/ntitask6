@@ -301,6 +301,11 @@ html {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+@media (max-width:767px) {
+    .achievement {
+        text-align: center;
+    }
+}
 .achievement .container > h2 {
     color: #fff;
     font-weight: 400;
@@ -309,7 +314,8 @@ html {
 }
 .achievement .container > p {
     color: #fff;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
+    font-weight: bold;
 }
 .achievement .container .cont {
     display: flex;
@@ -318,6 +324,11 @@ html {
 .achievement .container .cont img {
     width: 45%;
     margin-right: 40px;
+}
+@media (max-width:767px) {
+    .achievement .container .cont img {
+        display: none;
+    }
 }
 .achievement .container .cont .info {
     display: flex;
@@ -329,4 +340,120 @@ html {
 .achievement .container .cont .info .box {
     width: 50%;
     color: #fff;
+}
+.achievement .info .box {
+    margin-bottom: 40px;
+}
+.achievement .info .box h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.achievement .info .box h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+/*contact us*/
+.contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: rgba(0, 255, 255, 0.2) url(../Images/contactus.jpg) no-repeat  center/cover;
+    background-blend-mode: overlay;
+    border-bottom: 10px solid #ffc800;
+}
+.contact .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+@media (max-width: 700px) {
+    .contact .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.contact .text {
+    flex-grow: 1;
+}
+.contact .text h2 {
+    color: #ffc800;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.contact .text p {
+    color: #fff;
+    text-align: justify;
+    font-weight: 500;
+}
+.contact form {
+    background-color: transparent;
+    padding: 20px;
+    box-shadow: 0px 0px 5px 2px #ffc800;
+}
+.contact form input {
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.contact form button {
+    width: 100%;
+    color: #000;
+    margin-top: 15px;
+    text-transform: uppercase;
+    padding: 15px;
+    background-color: #fecc0a;
+    border: none;
+    letter-spacing: 5px;
+}
+/*footer*/
+.footer {
+    padding: 50px 0;
+    background-color: #000;
+}
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 767px) {
+    .footer .container {
+        flex-direction: column;
+    }
+    .footer .container > div:not(:last-child) {
+        border-bottom: 1px solid #fff;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+}
+.footer .links a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+.footer .social {
+    color: #fff;
+}
+.footer .social > div{
+    margin-bottom: 10px;
+}
+.footer .social i {
+    margin-right: 5px;
+}
+.footer .subscribe > div {
+    margin-bottom: 10px;
+}
+.footer .subscribe input {
+    width: 100%;
+    background-color: #000;
+    border: none;
+    padding: 15px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+    .footer .subscribe input {
+        width: 300px;
+    }
 }
